@@ -80,6 +80,7 @@ header .form .input{
   position: relative;
   left: -10px;
 }
+
 header .form .submit{
   background-color: #FFF;
   color: #666;
@@ -92,29 +93,62 @@ header div.top-header p{
   margin-top: 10px;
 }
 
+main {
+  width: 90%;
+  margin: auto;
+}
+
 article div.main-article{
   width: 100%;
 }
 
 .price{
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 main section article{
-  background-color: #fff;
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
 }
 
 main section article img{
   width: 100%;
 }
 
+.product-description {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ebebeb;
+  line-height: 20px;
+  padding: 15px;
+}
+
 main section article i,
 .discount{
   color: #39b54a;
+  font-size: 16px;
 }
 
-.product img {
-  width: 100%;
+main section article i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+main section article h3 {
+  font-size: 16px;
+  color: #999;
+  line-height: 30px;
 }
 
 footer {
