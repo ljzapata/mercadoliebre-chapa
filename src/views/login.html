@@ -43,7 +43,7 @@
     </header>
     <main>
       <section class="form-login">
-        <form action="/login.html" method="post">
+        <form action="http://localhost:3000" method="get">
           <div>
             <label for="username"></label>
             <input type="text" name="username" id="username" placeholder="Nombre de usuario" required>
@@ -53,7 +53,7 @@
             <input type="text" name="password" id="password" placeholder="Contraseña" required>
           </div>
           <div class="button">
-            <button type="submit">Enviar</button>
+            <button type="submit" formaction="http://localhost:3000">Enviar</button>
           </div>
         </form>
       </section>

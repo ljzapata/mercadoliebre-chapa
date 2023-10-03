@@ -44,7 +44,7 @@
     <main>
       <h2 class="h2-register">Tus datos</h2>
       <section class="form-login">
-        <form action="/login.html" method="post">
+        <form action="http://localhost:3000" method="get">
           <div>
             <label for="name"></label>
             <input type="text" name="name" id="name" placeholder="Nombre y apellido" required>
@@ -67,20 +67,19 @@
           </div>
           <h2 class="h2-register">Perfil de usuario</h2>
           <div class="profile">
-            <form class="profile" action="/profile" method="get">
               <label><input type="radio" name="Subscription">Comprador</label>
               <label><input type="radio" name="Subscription">Vendedor</label>
-            </form>
           </div>
           <h2 class="h2-register">Intereses</h2>
           <div class="interests">
-            <form class="interests" action="/interests" method="get">
               <label><input type="checkbox" name="pasatiempos" value="tv">Electro</label>
               <label><input type="checkbox" name="pasatiempos" value="js">Moda</label>
               <label><input type="checkbox" name="pasatiempos" value="html">Hogar</label>
               <label><input type="checkbox" name="pasatiempos" value="html">Juguetería</label>
               <label><input type="checkbox" name="pasatiempos" value="html">Vida sana</label>
-            </form>
+          </div>
+          <div class="button">
+            <input type="file" name="avatar" accept=".jpg, .png">
           </div>
           <div>
             <label for="password"></label>
@@ -91,7 +90,7 @@
             <input type="text" name="password" id="password" placeholder="Confirmar contraseña" required>
           </div>
           <div class="button">
-            <button type="reset">Cancelar</button><button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button><button type="submit" formaction="http://localhost:3000">Enviar</button>
           </div>
         </form>
       </section>

@@ -11,6 +11,9 @@ body{
 
 header {
   background-color: #EAC926;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .top-header {
@@ -23,6 +26,16 @@ header {
 .logo{
   width: 50%;
   padding: 10px;
+  animation: aumentar 1s ease-in 2 alternate;
+}
+
+@keyframes aumentar {
+  0%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1.2);
+  }
 }
 
 header div.form {
@@ -114,10 +127,18 @@ header div.top-header p{
 main {
   width: 90%;
   margin: auto;
+  margin-top: 180px;
+}
+
+article:hover div.main-article{
+  scale:1.2
 }
 
 article div.main-article{
   width: 100%;
+  position: relative;
+  scale: 1;
+  transition: all 450ms;
 }
 
 .price{
