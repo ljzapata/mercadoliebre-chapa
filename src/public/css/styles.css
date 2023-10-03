@@ -31,10 +31,10 @@ header {
 
 @keyframes aumentar {
   0%{
-    transform: scale(0.9);
+    transform: scale(1);
   }
   100%{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -122,29 +122,29 @@ header div.top-header p{
 
 .banner img {
   width: 100%;
+  margin-top: 185px;
 }
 
 main {
   width: 90%;
   margin: auto;
-  margin-top: 180px;
-}
-
-article:hover div.main-article{
-  scale:1.2
+  margin-top: 10px;
 }
 
 article div.main-article{
   width: 100%;
   position: relative;
-  scale: 1;
-  transition: all 450ms;
 }
 
 .price{
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
+}
+
+main section article:hover{
+  scale: 1.02;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main section article{
@@ -155,6 +155,8 @@ main section article{
     width: 90%;
     flex-direction: column;
     align-items: center;
+    scale: 1;
+    transition: all 450ms;
 }
 
 main section article img{
@@ -184,6 +186,10 @@ main section article i,
   font-size: 16px;
 }
 
+main section article i:hover {
+  transform: rotateZ(-90deg);
+}
+
 main section article i {
   display: block;
   font-size: 16px;
@@ -196,13 +202,19 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: all 450ms;
 }
 
 main section article h3 {
   font-size: 16px;
   color: #999;
   line-height: 30px;
-  display: none;
+  opacity: 0;
+  transition: all 450ms;
+}
+
+main section article h3:hover{
+  opacity: 1;
 }
 
 footer {
@@ -298,10 +310,15 @@ div.button {
   justify-content: space-around;
 }
 
+div.button button:hover {
+  background-color: #0022AA;
+}
+
 div.button button {
-  background-color: blue;
+  background-color: #808080;
   color: white;
   width: 40%;
+  transition: all 450ms;
 }
 
 .h2-register {
@@ -309,7 +326,7 @@ div.button button {
   margin-top: 10px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 461px) {
 
   .logo {
     width: 30%;
@@ -325,6 +342,10 @@ div.button button {
     width: 80%;
     font-size: 14px;
     margin-top: 26px;
+  }
+
+  .banner img {
+    margin-top: 150px;
   }
 
   main section article {
@@ -381,6 +402,10 @@ div.button button {
 }
 
 @media (min-width: 769px) {
+  header{
+    width: 100%;
+  }
+
   .logo {
     width: 30%;
     display: flex;
@@ -390,8 +415,27 @@ div.button button {
     flex-direction: row;
   }
 
+  .banner img {
+    margin-top: 130px;
+  }
+
   main section article {
     width: 23%;
     margin-left: 10px;
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer section {
+    width: 29%;
+  }
+  footer section p {
+    width: auto;
+  }
+
+  footer{
+
   }
 }
